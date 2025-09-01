@@ -1,22 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Register</title>
-</head>
-<body>
-    <div class="block">
-        <div class="block__1">
-            block__1
+<!doctype html>
+    <head>
+        <meta charset="UTF-8">
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Портфолио</title>
+    </head>
+    <body>
+        <div class="allPage">
+
+            <div class="aboutMe">
+                <img
+                    src="myPhoto/фото%20для%20документов.jpg"
+                    alt="Тут моя фотка"
+                    class="myPhoto"
+                />
+
+                <div class="aboutMe-text">
+                    <h1>ОБО МНЕ</h1>
+                    <p>Привет!</p>
+                    <p>Меня зовут Миша. Я начинающий Frontend разработчик, так же я получаю
+                    высшее образование в <strong>РТУ МИРЭА</strong>. Люблю готовить, проводить время
+                    на природе, кататься на машине и путешествовать.</p>
+
+
+                    <h4>Мои социальные сети</h4>
+                    <a href="https://t.me/pursheviches" target="_blank">Телеграм</a>
+                    |
+                    <a href="https://m.vk.com/purshevich" target="_blank">Вконтакте</a>
+                </div>
+            </div>
+
+            <div class="all-card">
+                <div class="card cardPurple">
+                    <h2>Информация</h2>
+                    <p><strong>Образование:</strong><br>
+                    Неполное высшее<br>
+                    <strong>Профессия:</strong><br>
+                    DevOps-инженер<br>
+                    Я занимаюсь изучением:</p>
+                    <img src="skills/free-icon-html-5-5968267.png" alt="HTML" />
+                    <img src="skills/free-icon-css-3-5968242.png" alt="CSS" />
+                    <img src="skills/free-icon-js-5968292.png" alt="JS" class="js" />
+                </div>
+
+                <div class="card cardGreen">
+                    <h2>Практика</h2
+                    <table class="tableOne">
+                        <tr>
+                            <td>Школа №1155</td>
+                            <td>Python</td>
+                            <td>2023 - 2024</td>
+                        </tr>
+                        <tr>
+                            <td>РТУ МИРЭА</td>
+                            <td>C++, C#</td>
+                            <td>2024 - 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Хоккей с шайбой</td>
+                            <td>Нападающий</td>
+                            <td>2008 - 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Хоккей с мячом</td>
+                            <td>Бортовик</td>
+                            <td>2012 - 2024</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2>Связаться со мной</h2>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="tetx" id="name" placeholder="Введите имя...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Ваше email</label>
+                            <input type="tetx" id="email" placeholder="Введите email...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение</label>
+                        <textarea id="text" rows="2" cols="15"></textarea>
+                    </div>
+
+                    <input class="btn" type="submit" value="Связаться">
+                </form>
+            </div>
         </div>
-        <div class="block__2">
-            block__2
-        </div>
-        <div class="block__3">
-            block__3
-        </div>
-    </div>
-</body>
+    </body>
 </html>
+
